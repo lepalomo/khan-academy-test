@@ -1,27 +1,11 @@
 const { test, expect } = require('@playwright/test');
 
 require('dotenv').config();
-// Access credentials
-const teacherEmail = process.env.TEACHER_EMAIL;
-const teacherPassword = process.env.TEACHER_PASSWORD;
 
 // Import the login function from auth.js
 const loginAsTeacher = require('./utils/auth');
 
-// Test if environment variables are set
-expect(teacherEmail).toBeDefined();
-expect(teacherPassword).toBeDefined();
-
 test('Teacher should be able to create a class with students', async ({ page }) => {
-    // navigate to khan academy
-    await page.goto('https://pt.khanacademy.org');
-
-    // Check if the accept cookies modal appears
-    if (await page.isVisible('button[id="onetrust-accept-btn-handler"]')) {
-        // Click on the accept cookies button to close the modal
-        await page.click('button[id="onetrust-accept-btn-handler"]');
-    }
-
     // Use the login function instead of manual login steps
     await loginAsTeacher.loginAsTeacher(page);
 
