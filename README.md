@@ -41,9 +41,9 @@
     <li style="display:block"><strong>Configure Environment Variables</strong>
         <p>Create an <code>.env</code> file in the root directory to store test credentials securely. This file is ignored by Git.</p>
         <pre>TEACHER_EMAIL=your_teacher_email@example.com
-TEACHER_PASSWORD=your_teacher_password
-STUDENT_EMAIL=your_student_email@example.com
-STUDENT_PASSWORD=your_student_password</pre>
+        TEACHER_PASSWORD=your_teacher_password
+        STUDENT_EMAIL=your_student_email@example.com
+        STUDENT_PASSWORD=your_student_password></pre>
     </li>
     <li><strong>Initialize Playwright</strong>
         <p>Ensure browsers are set up for testing:</p>
