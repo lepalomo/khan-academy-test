@@ -40,11 +40,10 @@
     </li>
     <li style="display:block"><strong>Configure Environment Variables</strong>
         <p>Create an <code>.env</code> file in the root directory to store test credentials securely. This file is ignored by Git.</p>
-        <pre>
-        <li>TEACHER_EMAIL=your_teacher_email@example.com</li>
-        <li>TEACHER_PASSWORD=your_teacher_password</li>
-        <li>STUDENT_EMAIL=your_student_email@example.com</li>
-        <li>STUDENT_PASSWORD=your_student_password></li>
+        <pre>TEACHER_EMAIL=your_teacher_email@example.com
+        <br>TEACHER_PASSWORD=your_teacher_password
+        <br>STUDENT_EMAIL=your_student_email@example.com
+        <br>STUDENT_PASSWORD=your_student_password
         </pre>
     </li>
     <li><strong>Initialize Playwright</strong>
