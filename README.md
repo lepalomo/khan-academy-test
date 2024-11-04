@@ -1,4 +1,5 @@
 Khan Academy Automated Tests with Playwright
+
 This project automates key test scenarios for the Khan Academy website, focusing on interactions that a teacher and student would perform on the platform. The tests are implemented using Playwright and include functionality such as creating a class, recommending content, removing a user, and accessing course materials.
 
 Project Requirements
